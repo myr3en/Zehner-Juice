@@ -15,10 +15,56 @@
 </head>
 
 <body>
+
+    <div class="announcenment">
+        <p>Free Shipping on your first order and any order over $89 <a href="/free-shipping"> Click to see details</a></p>
+    </div>
+
+    <!-- Top navigation -->
+    <div class="navigation">
+        <div class="login">
+            <a href="">Log In</a>
+        </div>
+
+        <div class="topnav">
+            <!-- Centered link -->
+            <div class="topnav-centered">
+                <a href="#home" class="active"><img src="assets/img/juice-logo.jpg" /></a>
+            </div>
+
+            <!-- Left-aligned links (default) -->
+            <a href="#shop" class="active">Shop</a>
+            <a href="#cleanses">Cleanses</a>
+            <a href="#build">Build a Box</a>
+
+            <!-- Right-aligned links -->
+            <div class="topnav-right">
+                <a href="#unconventional" >The Unconventional</a>
+                <a href="#about">Who We Are</a>
+            </div>
+        </div>
+
+        <div class="cart">
+            <a href="#cart"><i class="fas fa-archive"></i>(2)</a>
+        </div>
+    </div>
+
+
     <div class="container">
 
     </div>
 
+
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
 
 </body>
 </html>
