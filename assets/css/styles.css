@@ -75,7 +75,7 @@ a, .btn, input {
 }
 
 
-/* Mobile */
+
 @media screen and (max-width: 600px) {
     .announcenment p {
         font-size: 11px;
@@ -105,6 +105,7 @@ a, .btn, input {
 .login a,
 .cart a {
     font-size: 12px;
+    text-decoration: none;
 }
 
 .topnav {
@@ -170,8 +171,8 @@ a, .btn, input {
     }
 }
 
-/* Responsive navigation menu (for mobile devices) */
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1000px) {
     .navigation {
         flex-direction: column;
     }
@@ -237,8 +238,19 @@ a, .btn, input {
     position: relative;
 }
 
-.hero-banner .inner {
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-banner .main {
     display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.inner {
+    display: inline-flex;
     flex-direction: column;
     max-width: 600px;
 
@@ -277,7 +289,8 @@ a, .btn, input {
 }
 
 
-/* mobile devices */
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 1000px) {
+    .inner {
+        padding: 20px;
+    }
 }
