@@ -334,6 +334,7 @@ h2 {
     position: relative;
     width: 33.33333%;
     display: inline-flex;
+    justify-content: center;
 }
 
 .rednum {
@@ -346,7 +347,7 @@ h2 {
 .text-float {
     position: absolute;
     top: 35%;
-    left: -30px;
+    left: 10px;
     z-index: 1;
     width: 160px;
     text-align: left;
