@@ -1,36 +1,36 @@
 /* FONTS */
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro.eot');
-    src: url('DINPro.eot?#iefix') format('embedded-opentype'),
-        url('DINPro.woff2') format('woff2'),
-        url('DINPro.woff') format('woff'),
-        url('DINPro.ttf') format('truetype'),
-        url('DINPro.svg#DINPro') format('svg');
+    src: url('../fonts/DINPro.eot');
+    src: url('../fonts/DINPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro.woff2') format('woff2'),
+        url('../fonts/DINPro.woff') format('woff'),
+        url('../fonts/DINPro.ttf') format('truetype'),
+        url('../fonts/DINPro.svg#DINPro') format('svg');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-Medium.eot');
-    src: url('DINPro-Medium.eot?#iefix') format('embedded-opentype'),
-        url('DINPro-Medium.woff2') format('woff2'),
-        url('DINPro-Medium.woff') format('woff'),
-        url('DINPro-Medium.ttf') format('truetype'),
-        url('DINPro-Medium.svg#DINPro-Medium') format('svg');
+    src: url('../fonts/DINPro-Medium.eot');
+    src: url('../fonts/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-Medium.woff2') format('woff2'),
+        url('../fonts/DINPro-Medium.woff') format('woff'),
+        url('../fonts/DINPro-Medium.ttf') format('truetype'),
+        url('../fonts/DINPro-Medium.svg#DINPro-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'DIN Pro';
-    src: url('DINPro-Bold.eot');
-    src: url('DINPro-Bold.eot?#iefix') format('embedded-opentype'),
-        url('DINPro-Bold.woff2') format('woff2'),
-        url('DINPro-Bold.woff') format('woff'),
-        url('DINPro-Bold.ttf') format('truetype'),
-        url('DINPro-Bold.svg#DINPro-Bold') format('svg');
+    src: url('../fonts/DINPro-Bold.eot');
+    src: url('../fonts/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/DINPro-Bold.woff2') format('woff2'),
+        url('../fonts/DINPro-Bold.woff') format('woff'),
+        url('../fonts/DINPro-Bold.ttf') format('truetype'),
+        url('../fonts/DINPro-Bold.svg#DINPro-Bold') format('svg');
     font-weight: bold;
     font-style: normal;
 }
@@ -50,7 +50,31 @@ a, .btn, input {
     letter-spacing: 0.5px;
 }
 
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 100%;
+}
 
+.mid-text {
+    font-size: 15px !important;
+}
+
+.center {
+    text-align: center;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
 
 
 /* Announcenment */
@@ -228,7 +252,10 @@ a, .btn, input {
 
 
 /* Content */
-
+/* section - hero banner */
+.hero {
+    height: 75vh;
+}
 .hero-banner {
     background-image: url("../img/hero-banner.jpg");
     height: 75vh;
@@ -238,29 +265,21 @@ a, .btn, input {
     position: relative;
 }
 
-.main {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .hero-banner .main {
     display: flex;
     align-items: center;
     height: 100%;
 }
 
+.hero-banner .inner {
+    max-width: 600px;
+}
+
 .inner {
     display: inline-flex;
     flex-direction: column;
-    max-width: 600px;
-
 }
 
-.inner h1 {
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 50px;
-}
 
 .inner p {
     font-weight: normal;
@@ -294,3 +313,67 @@ a, .btn, input {
         padding: 20px;
     }
 }
+
+
+
+/* Section 2 - 3 columm center */
+.feature .inner {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin: 20px;
+}
+
+.grid {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
+}
+.threecol {
+    position: relative;
+    width: 33.33333%;
+    display: inline-flex;
+}
+
+.rednum {
+    color: #ff5e48;
+    font-size: 150px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text-float {
+    position: absolute;
+    top: 35%;
+    left: -30px;
+    z-index: 1;
+    width: 160px;
+    text-align: left;
+}
+
+.text-float::after {
+    content: "";
+    height: 2px;
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 20px;
+    z-index: -1;
+    border-top: 1px solid #000;
+}
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        flex-direction: column;
+    }
+}
+
+
+
+/* Section 3 - slider */
+
+
+
+/* Section 4 - product */
