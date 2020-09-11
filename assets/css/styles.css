@@ -64,6 +64,12 @@ p.mid-text {
     line-height: 2em;
 }
 
+@media screen and (max-width: 1000px) {
+    p.mid-text {
+        margin: 0 20px;
+    }
+}
+
 .center {
     text-align: center;
 }
@@ -735,10 +741,12 @@ footer {
     background-color: transparent;
     border: 1px solid #ff5e48;
     color: #ff5e48;
+    border-radius: 0;
 }
 .main-footer input.btn-white:hover {
     background-color: #ff5e48;
     color: #fff;
+    border-radius: 0;
 }
 
 .main-footer .grid {
