@@ -371,9 +371,16 @@ h2 {
 .grid {
     display: flex;
     justify-content: stretch;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
 }
+
+@media screen and (max-width: 1000px) {
+    .grid {
+        align-items: center;
+    }
+}
+
 .threecol {
     position: relative;
     width: 33.33333%;
@@ -499,16 +506,34 @@ h3 {
 }
 
 .product .inner {
-    justify-content: center;
     align-items: center;
-}
-.quartercol {
-    width: 25%;
-    position: relative;
-    margin: 15px;
+    height: 100%;
+    justify-content: center;
 }
 
-.quartercol img {
+@media screen and (max-width: 1000px) {
+    .product .inner {
+        padding: 0;
+        margin: 30px 0;
+    }
+}
+
+.quartercol {
+    width: 25%;
+    margin: 15px;;
+}
+
+.product-cont {
+    position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+    .quartercol {
+        width: 80%;
+    }
+}
+
+.product-cont img {
     opacity: 1;
     display: block;
     width: 100%;
@@ -518,7 +543,7 @@ h3 {
     border: 1px solid #fff;
 }
 
-.quartercol .hover-text {
+.product-cont .hover-text {
     transition: .5s ease;
     opacity: 0;
     position: absolute;
@@ -533,11 +558,11 @@ h3 {
     display: flex;
 }
 
-.quartercol:hover img {
+.product-cont:hover img {
     opacity: 0.3;
 }
 
-.quartercol:hover .hover-text {
+.product-cont:hover .hover-text {
     opacity: 1;
     border: 1px solid #ff5e48;
 }
@@ -587,4 +612,53 @@ h3 {
 
 .cleanse .btn-white {
     margin-top: 50px;
+}
+
+
+
+
+/***********************/
+/* Section 6 - Location */
+/***********************/
+
+.location .location-heading {
+    font-size: 18px;
+    line-height: 1.5em;
+    font-weight: 500;
+    color:#f15b4c;
+    margin-bottom: 0;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.location .location-text {
+    font-size: 15px;
+    font-weight: normal;
+    color:#231f20;
+    margin: 10px 0;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+
+
+.location .main {
+    max-width: 1200px;
+}
+
+.location h1 {
+    margin-bottom: 40px;
+}
+
+.location .inner {
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .location .inner {
+        padding: 0;
+        margin: 30px 0;
+    }
 }
